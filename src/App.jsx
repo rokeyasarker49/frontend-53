@@ -8,7 +8,7 @@ function App() {
 	const [user, setUser] = useState([]);
 
 	useEffect(() => {
-		fetch("https://backend-53.vercel.app/users")
+		fetch("https://back-end-red.vercel.app/users")
 			.then((response) => response.json())
 			.then((data) => setUser(data));
 	}, []);
@@ -26,7 +26,7 @@ function App() {
 
 		const user = { userId, name, age, profession, email, address };
 
-		fetch("https://backend-53.vercel.app/users", {
+		fetch("", {
 			method: "POST",
 			headers: {
 				"content-type": "application/json",
